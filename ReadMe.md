@@ -5,16 +5,16 @@
 Here's how i did it:
 
 1. Create a Project & Initialize Git:
-- Create a new directory for your project: `mkdir Gym-Git-Exercise-Solutions`
+- Create a new directory for my project: `mkdir Gym-Git-Exercise-Solutions`
 - Change into the project directory: `cd Gym-Git-Exercise-Solutions`
 - Initialize Git: `git init`
 
-2. Rename your main branch from `master` to `main`:
+2. Rename my main branch from `master` to `main`:
 - Rename the branch locally: `git branch -m master main`
 
 3. Make changes to the project
 
-5. Stage your changes and commit them:
+5. Stage my changes and commit them:
 - Add all changes to the staging area: `git add .`
 - Commit the changes with a descriptive message: `git commit -m "Gym-Git-Exercise-Solutions init"`
 
@@ -40,7 +40,7 @@ Here's how i did it:
 - Open `home.html`  in a text editor and make changes
 2. Save the changes to the home.html file:
 - `git add home.html`
-3. Stash save your current changes:
+3. Stash save my current changes:
 - `git stash save`
 4. Repeat the process for a new about page
 - `touch about.html`
@@ -63,8 +63,21 @@ Here's how i did it:
 9 .Using stash pop, restore the changes of the team page:
 - `$ git stash pop stash@{1}
 10. Reset the current changes using git reset to go back to the changes without the team page:
-- `$ git reset --hard HEAD
-`
+- `$ git reset --hard HEAD`
 
+## Bundle 2
+##Exercises 1
 
-
+1. Create a new branch named ft/bundle-2:
+- `git checkout -b ft/bundle-2`
+2. Add new changes to my project. Create a new page named services.html and add some changes:
+- `touch services.html`
+- Open services.html in a text editor and make the necessary changes
+3. Commit my changes:
+```bash
+git add services.html
+git commit -m "services page added"
+```
+4. Push my branch to the remote repository:
+- `$ git push origin ft/bundle-2`
+5. Create a Pull Request against the main branch in my GitHub repository.
